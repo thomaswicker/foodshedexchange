@@ -1,0 +1,25 @@
+/*Light brown */
+background-color: rgba(179, 151, 110, 1);
+
+/* Darker brown */
+background-color: rgba(179, 151, 110, 1);
+
+@media screen and (min-width: 0px) and (max-width: 640px) {
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 992px) {
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1920px) {
+
+}

@@ -1,0 +1,540 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* ############### BEGIN CSS RESET ############### */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+p {
+	line-height: 140%;
+}
+
+/* ############### END CSS RESET ############### */
+
+
+
+/* ############### BEGIN HELPERS ############### */
+
+.bg-red { background-color: red;}
+.bg-blue { background-color: blue;}
+.bg-green { background-color: green;}
+.bg-purple { background-color: purple;}
+.bg-orange { background-color: orange;}
+
+.margin-top-50 { float: left; width: 100%; margin-top: 50px; }
+
+/* ############### END HELPERS ############### */
+
+
+
+/* ############### BEGIN MASONRY CSS ############### */
+
+.grid {
+	float: left;
+	width: 100%;
+}
+
+.grid-item { width: 33.3%; border: 10px solid white;}
+.grid-item--width2 { width: 100%; }
+.grid-item img { width: 100%; }
+
+@media screen and (min-width: 0px) and (max-width: 640px) {
+	.grid-item { width: 100%; border: 10px solid white;}
+}
+
+@media screen and (min-width: 641px) and (max-width: 992px) {
+	.grid-item { width: 50%; border: 10px solid white;}
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1920px) {
+
+}
+/* ############### END MASONRY CSS ############### */
+
+
+
+/* ############### BEGIN GLOBAL STYLES ############### */
+
+html, body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+@media all and (min-width: 0px) and (max-width: 640px) {
+	html, body {
+		background-color: red !important;
+	}
+}
+
+@media all and (min-width: 641px) and (max-width: 992px) {
+	html, body {
+		background-color: orange !important;
+	}
+}
+
+@media all and (min-width: 993px) and (max-width: 1200px) {
+	html, body {
+		background-color: yellow !important;
+	}
+}
+
+@media all and (min-width: 1201px) and (max-width: 1400px) {
+	html, body {
+		background-color: blue !important;
+	}
+}
+
+@media all and (min-width: 1401px) and (max-width: 1920px) {
+	html, body {
+		background-color: purple !important;
+	}
+}
+
+.label-header {
+	float: left;
+	width: 100%;
+	margin: 0px 0px 10px 0px;
+	padding: 8px 0px 8px 0px;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	background-color: #000;
+}
+
+input {
+	float: left;
+	width: 90%;
+	height: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* ############### END GLOBAL STYLES ############### */
+
+
+
+/* ############### BEGIN FOOTER STYLES ############### */
+
+.fsx-footer {
+	float: left;
+	width: 100%;
+	background-color: #cccccc;
+	min-height: 350px;
+	margin-top: 50px;
+}
+.fsx-footer ul {
+	margin-top: 50px;
+}
+.fsx-footer ul li {
+	float: left;
+	width: 100%;
+	padding: 10px 0px 10px 0px;
+}
+.fsx-footer ul li a {
+	font-size: 18px;
+	color: black;
+}
+
+.fsx-footer-bottom {
+	float: left;
+	width: 100%;
+	padding: 15px 0px 15px 20px;
+	background-color: black;
+	color: white;
+}
+
+/* ############### END FOOTER STYLES ############### */
+
+
+
+/* ############### BEGIN GRID STYLES ############### */
+
+.fsx-row {
+
+}
+
+/* ############### END GRID STYLES ############### */
+
+
+
+/* ############### BEGIN NAVIGATION ############### */
+
+.nav-bar {
+	position: relative;
+	top: 40px;
+	float: left;
+	width: 100%;
+	padding: 0;
+	background-color: #ccc;
+}
+.nav-bar ul {
+	float: right;
+}
+.nav-bar ul li {
+	float: left;
+}
+.nav-bar ul li a {
+	float: left;
+	padding: 15px 15px 15px 15px;
+	color: black;
+}
+.nav-bar ul li a.active {
+	background-color: rgba(0, 127, 91, 1);
+	color: white;
+}
+.nav-bar ul li a:hover {
+	background-color: rgba(0, 127, 91, 1);
+	color: white;
+}
+
+.top-bar-spacer {
+	position: absolute;
+	top: 0px;
+	float: left;
+	width: 100%;
+	height: 40px;
+	padding: 8px 0px 8px 0px;
+	background-color: black;
+	text-align: right
+}
+.top-bar-spacer img {
+	float: left;
+	margin-top: -12px;
+	margin-left: 20px;
+	max-width: 400px;
+}
+.top-bar-spacer i {
+	color: white;
+}
+.top-bar-spacer li {
+	float: left;
+}
+.top-bar-spacer .button-container {
+	float: right;
+	height: 40px;
+	margin-right: 5px;
+}
+.top-bar-spacer .button-container li{
+	height: 25px;
+	padding: 5px 15px 0px 15px;
+	border-left: 1px solid #555;
+}
+
+.top-bar-title img {
+	max-width: 360px;
+	margin-left: 20px;
+}
+
+#responsive-menu {
+
+}
+
+#responsive-menu .top-bar-left {
+
+}
+
+#responsive-menu .top-bar-right {
+
+}
+
+#responsive-menu .top-bar-right .dropdown li a {
+	height: 40px;
+	font-size: 16px;
+	font-weight: 600;
+	color: rgba(110, 110, 76, 1);
+	text-transform: uppercase;
+}
+
+#responsive-menu .top-bar-right .dropdown li a:hover {
+	background-color: rgba(0, 127, 91, 1);
+	color: white;
+}
+
+/* ############### END NAVIGATION ############### */
+
+
+
+/* ############### BEGIN ADS ############### */
+
+.ad {
+	background-color: rgba(110, 110, 76, 1);
+	color: white;
+	text-align: center;
+}
+
+.banner-ad-top {
+	padding: 95px 0px 15px 0px;
+	text-align: center;
+}
+
+.banner-ad-top .ad {
+	min-height: 180px;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 90px;
+	background-color: rgba(110, 110, 76, 1);
+	font-size: 20px;
+}
+
+.sidebar-ad {
+	margin-top: 20px;
+}
+
+
+.banner-ad-sidebar {
+	float: left;
+	width: 100%;
+}
+
+.banner-ad-sidebar .ad {
+	float: left;
+	width: 100%;
+	min-height: 300px;
+	margin-top: 40px;
+	padding-top: 140px;
+	font-size: 20px;
+}
+
+/* ############### END ADS ############### */
+
+
+
+/* ############### BEGIN HOME PAGE SPECIFIC STYLES ############### */
+
+.fsx-container {
+	max-width: 1500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.fsx-container-left {
+	float: left;
+	width: 70%;
+	padding-right: 30px;
+}
+
+.fsx-container-right {
+	float: left;
+	width: 30%;
+	background-color: white;
+}
+
+/* ############### END HOME PAGE SPECIFIC STYLES ############### */
+
+
+
+/* ############### BEGIN 'JOIN NEWSLETTER' STYLES ############### */
+
+.join-newsletter {
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+	padding: 12px 0px 30px 0px;
+	border-top: 8px solid rgba(0, 127, 91, 1);
+}
+.join-newsletter h3 {
+	font-size: 22px;
+	font-weight: 600;
+	margin-bottom: 15px;
+	color: rgba(0, 127, 91, 1);
+}
+.join-newsletter label {
+	float: left;
+	width: 100%;
+	margin-top: 15px;
+	margin-bottom: 8px;
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+/* ############### END 'JOIN NEWSLETTER' STYLES ############### */
+
+
+
+/* ############### BEGIN 'FOOD EXCHANGE' STYLES ############### */
+
+.food-exchange {
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+	padding: 12px 0px 30px 0px;
+	border-top: 8px solid rgba(0, 127, 91, 1);
+}
+.food-exchange h3 {
+	font-size: 22px;
+	font-weight: 600;
+	margin-bottom: 15px;
+	color: rgba(0, 127, 91, 1);
+}
+.food-exchange p {
+	float: left;
+	width: 100%;
+	margin-top: 15px;
+	margin-bottom: 8px;
+	font-family: arial;
+	font-size: 17px;
+	font-weight: 300;
+}
+
+/* ############### END 'FOOD EXCHANGE' STYLES ############### */
+
+
+
+/* ############### BEGIN SIDEBAR NEWSFEED STYLES ############### */
+
+.sidebar-newsfeed {
+	float: left;
+	width: 100%;
+}
+
+.sidebar-newsfeed .sb-header {
+	margin-top: 20px;
+	padding: 8px 0px 8px 0px;
+	background-color: black;
+	font-weight: 600;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.sidebar-newsfeed-list {
+
+}
+
+.sidebar-newsfeed-list li {
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.sidebar-newsfeed-list li img {
+	width: 100%;
+}
+
+.sidebar-newsfeed-list li p {
+	padding-top: 10px;
+	font-size: 19px;
+}
+
+/* ############### END SIDEBAR NEWSFEED STYLES ############### */
+
+
+
+/* ############### BEGIN IMG TILE STYLES ############### */
+
+.img-tile-grid {
+	position: relative;
+	z-index: 99;
+}
+
+.img-tile-grid p {
+	position: absolute;
+	bottom: 30px;
+	left: 40px;
+	width: 80%;
+	font-size: 25px;
+	line-height: 130%;
+	color: white;
+	text-shadow: 2px 2px #000;
+	z-index: 100;
+}
+
+.img-tile-with-label-small {
+	position: relative;
+	z-index: 99;
+	float: left;
+	width: 33.3%;
+}
+
+.img-tile-with-label-small img {
+	width: 100%;
+	border: 5px solid white;
+}
+
+.img-tile-with-label-small p {
+	width: 100%;
+	padding-top: 10px;
+	font-size: 18px;
+	line-height: 130%;
+	color: black;
+}
+
+.img-tile-with-label-large {
+	position: relative;
+	z-index: 99;
+}
+
+.img-tile-with-label-large img {
+	width: 100%;
+}
+
+.img-tile-with-label-large p {
+	position: absolute;
+	bottom: 50px;
+	left: 40px;
+	width: 65%;
+	font-size: 38px;
+	line-height: 130%;
+	color: white;
+	text-shadow: 2px 2px #000;
+	z-index: 100;
+}
+
+/* ############### END IMG TILE STYLES ############### */
+

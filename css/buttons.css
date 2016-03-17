@@ -1,0 +1,20 @@
+.btn {
+	float: left;
+	padding: 12px 18px 12px 18px;
+	border: 2px solid red;
+	font-weight: 600;
+	margin-top: 20px;
+}
+
+.btn-green {
+	background-color: white;
+	border: 2px solid rgba(0, 127, 91, 1);
+	color: rgba(0, 127, 91, 1);
+}
+
+.btn-green:hover {
+	background-color: rgba(0, 127, 91, 1);
+	border: 2px solid rgba(0, 127, 91, 1);
+	cursor: pointer;
+	color: white;
+}
