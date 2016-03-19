@@ -1,25 +1,40 @@
 /*Light brown */
-background-color: rgba(179, 151, 110, 1);
+rgba(179, 151, 110, 1);
 
 /* Darker brown */
-background-color: rgba(179, 151, 110, 1);
+rgba(179, 151, 110, 1);
 
-@media screen and (min-width: 0px) and (max-width: 640px) {
+/* Seafoam */
+rgba(0, 127, 91, 1);
 
-}
-
-@media screen and (min-width: 641px) and (max-width: 992px) {
-
-}
-
-@media screen and (min-width: 993px) and (max-width: 1200px) {
+@media all and (min-width: 1401px) and (max-width: 1920px) {
 
 }
 
-@media screen and (min-width: 1201px) and (max-width: 1400px) {
+@media all and (min-width: 1201px) and (max-width: 1400px) {
 
 }
 
-@media screen and (min-width: 1401px) and (max-width: 1920px) {
+@media all and (min-width: 993px) and (max-width: 1200px) {
 
 }
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+
+}
+
+@media all and (min-width: 380px) and (max-width: 767px) {
+
+}
+
+@media all and (min-width: 0px) and (max-width: 379px) {
+
+}
+
+
+
+
+
+
+
+
