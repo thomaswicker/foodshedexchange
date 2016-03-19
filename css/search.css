@@ -1,0 +1,88 @@
+/* ############### BEGIN SEARCH ############### */
+
+#search-trigger {
+
+}
+
+#search-trigger i.active {
+	color: rgba(0, 127, 91, 1);
+}
+@media all and (min-width: 380px) and (max-width: 767px) {
+	#search-trigger i.active {
+		color: black;
+	}
+}
+@media all and (min-width: 0px) and (max-width: 379px) {
+	#search-trigger i.active {
+		color: black;
+	}
+}
+
+#search-container {
+	position: absolute;
+	top: 86px;
+	right: -750px;
+	width: 30%;
+	padding: .8rem 1rem 0rem .6rem;
+	background-color: black;
+	transition: all .25s ease;
+	min-width: 550px;
+}
+#search-container input {
+	float: left;
+	width: 93%;
+	margin: 0 0 .75rem 0rem;
+}
+#search-container span {
+	float: left;
+	margin-left: 15px;
+}
+@media all and (min-width: 380px) and (max-width: 767px) {
+	#search-container span {
+		display: none;
+	}
+}
+@media all and (min-width: 0px) and (max-width: 379px) {
+	#search-container span {
+		display: none;
+	}
+}
+#search-container span i {
+	font-size: 1.5rem;
+	padding: 7px 0px 0px 0px;
+}
+#search-container span i:hover {
+	color: red;
+}
+#search-container.open {
+	right: 0px;
+}
+@media all and (min-width: 380px) and (max-width: 767px) {
+	#search-container {
+		right: -750px;
+		float: left;
+		width: 100%;
+		padding: .8rem 1rem 0rem .6rem;
+		min-width: 0;
+	}
+	#search-container input {
+		float: left;
+		width: 100%;
+		margin: 0rem 0rem .7rem 0rem;
+	}
+}
+@media all and (min-width: 0px) and (max-width: 379px) {
+	#search-container {
+		float: left;
+		width: 100%;
+		padding: .8rem 1rem .7rem .6rem;
+		min-width: 0;
+	}
+	#search-container input {
+		float: left;
+		width: 100%;
+		margin: 0rem 0rem 0rem 0rem;
+	}
+}
+
+/* ############### END SEARCH ############### */
