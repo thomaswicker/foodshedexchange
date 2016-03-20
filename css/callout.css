@@ -1,0 +1,143 @@
+/*
+   ____    _    _     _     ___  _   _ _____
+  / ___|  / \  | |   | |   / _ \| | | |_   _|
+ | |     / _ \ | |   | |  | | | | | | | | |
+ | |___ / ___ \| |___| |__| |_| | |_| | | |
+  \____/_/   \_\_____|_____\___/ \___/  |_|
+
+*/
+
+.callout-box {
+	float: left;
+	width: 100%;
+	margin: 1.5rem 0rem .5rem 0rem;
+	padding: 1.5rem 1rem 2rem 1rem;
+	border-top: 3px solid rgba(0, 127, 91, 1);
+	border-bottom: 3px solid rgba(0, 127, 91, 1);
+	background-color: rgba(0, 127, 91, .1);
+}
+@media all and (min-width: 380px) and (max-width: 767px) {
+	.callout-box {
+		padding: 1.5rem .2rem 2rem .2rem;
+	}
+}
+
+@media all and (min-width: 0px) and (max-width: 379px) {
+	.callout-box {
+		padding: 1.5rem .2rem 2rem .2rem;
+	}
+}
+
+.callout-box .cob-left {
+	float: left;
+	width: 300px;
+	padding: .5rem 0rem 0rem 0rem;
+	text-align: center;
+}
+@media all and (min-width: 380px) and (max-width: 767px) {
+	.callout-box .cob-left {
+		width: 100%;
+	}
+}
+
+@media all and (min-width: 0px) and (max-width: 379px) {
+	.callout-box .cob-left {
+		width: 100%;
+	}
+}
+
+.callout-box .cob-left img {
+	max-width: 200px;
+	border: 10px solid white;
+	box-shadow: 0px 0px 6px #000;
+}
+
+.callout-box .cob-right {
+	float: left;
+	width: calc(100% - 300px);
+}
+@media all and (min-width: 380px) and (max-width: 767px) {
+	.callout-box .cob-right {
+		width: 100%;
+	}
+}
+
+@media all and (min-width: 0px) and (max-width: 379px) {
+	.callout-box .cob-right {
+		width: 100%;
+	}
+}
+
+.callout-box .cob-right .cob-header {
+	float: left;
+	width: 100%;
+	margin-top: 1.3rem;
+	font-size: 1.5rem;
+	font-weight: 600;
+	text-align: center;
+	text-transform: uppercase;
+	color: rgba(0, 127, 91, 1);
+}
+@media all and (min-width: 380px) and (max-width: 767px) {
+	.callout-box .cob-right .cob-header {
+		font-size: 1.3rem;
+	}
+}
+
+@media all and (min-width: 0px) and (max-width: 379px) {
+	.callout-box .cob-right .cob-header {
+		font-size: 1.3rem;
+	}
+}
+
+.callout-box .cob-right .cob-content {
+	float: left;
+	width: 100%;
+	padding: 1rem 1rem 1rem 2rem;
+	font-size: 1.1rem;
+	color: rgba(0, 107, 91, 1);
+}
+@media all and (min-width: 380px) and (max-width: 767px) {
+	.callout-box .cob-right .cob-content {
+		padding: 1rem 1rem 1rem 1rem;
+	}
+}
+
+@media all and (min-width: 0px) and (max-width: 379px) {
+	.callout-box .cob-right .cob-content {
+		padding: 1rem 1rem 1rem 1rem;
+	}
+}
+
+.callout-box .cob-right .cob-content .more-link {
+	display: inline;
+	font-size: .9rem;
+	font-weight: 600;
+	color: white;
+	background-color: rgba(0, 127, 91, 1);
+	margin-left: .2rem;
+	padding: 0rem .5rem .2rem .5rem;
+}
+@media all and (min-width: 380px) and (max-width: 767px) {
+	.callout-box .cob-right .cob-content .more-link {
+		float: left;
+		width: 100%;
+		margin-top: 1rem;
+		display: block;
+		text-align: center;
+	}
+}
+
+@media all and (min-width: 0px) and (max-width: 379px) {
+	.callout-box .cob-right .cob-content .more-link {
+		float: left;
+		width: 100%;
+		margin-top: 1rem;
+		display: block;
+		text-align: center;
+	}
+}
+.callout-box .cob-right .cob-content .more-link:hover {
+	text-decoration: underline;
+	background-color: rgba(0, 107, 91, 1);
+}

@@ -1,4 +1,11 @@
-/* ############### BEGIN NAVIGATION ############### */
+/*
+  _   _    ___     _____ ____    _  _____ ___ ___  _   _
+ | \ | |  / \ \   / /_ _/ ___|  / \|_   _|_ _/ _ \| \ | |
+ |  \| | / _ \ \ / / | | |  _  / _ \ | |  | | | | |  \| |
+ | |\  |/ ___ \ V /  | | |_| |/ ___ \| |  | | |_| | |\  |
+ |_| \_/_/   \_\_/  |___\____/_/   \_\_| |___\___/|_| \_|
+
+*/
 
 .nav-bar {
 	float: left;
@@ -77,12 +84,14 @@
 	color: white;
 }
 #nav-bar p.tagline {
-	position: absolute;
-	top: 40px;
+	position: relative;
+	top: 0px;
 	left: 20px;
-	margin-top: 10px;
+	float: left;
+	width: 400px;
+	margin-top: 12px;
 	font-style: italic;
-	font-weight: 500;
+	font-weight: 600;
 }
 @media all and (min-width: 993px) and (max-width: 1200px) {
 	#nav-bar p.tagline {

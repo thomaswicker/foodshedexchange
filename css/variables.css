@@ -1,296 +1,43 @@
-/* ############### BEGIN NAVIGATION ############### */
+/*Light brown */
+rgba(179, 151, 110, 1);
 
-.nav-bar {
-	float: left;
-	width: 100%;
-	padding: 0;
-	background-color: #ddd;
+/* Darker brown */
+rgba(179, 151, 110, 1);
+
+/* Seafoam */
+rgba(0, 127, 91, 1);
+
+/* Dark Seafoam */
+rgba(0, 107, 91, 1);
+
+@media all and (min-width: 1401px) and (max-width: 1920px) {
+
 }
-@media all and (min-width: 380px) and (max-width: 767px) {
-	.nav-bar {
-		position: absolute;
-		top: -330px;
-		float: left;
-		background-color: rgba(255, 255, 255, .95);
-		transition: top 0.25s ease;
-		border-bottom: 5px solid white;
-	}
-	.nav-bar.active {
-		position: absolute;
-		top: 78px;
-		position: absolute;
-		z-index: 100;
-	}
+
+@media all and (min-width: 1201px) and (max-width: 1400px) {
+
 }
-@media all and (min-width: 0px) and (max-width: 379px) {
-	.nav-bar {
-		float: left;
-		width: 100%;
-		height: 0px;
-		background-color: rgba(255, 255, 255, .95);
-		border-bottom: 5px solid white;
-	}
-	.nav-bar.active {
-		position: absolute;
-		height: auto;
-		z-index: 100;
-	}
-}
-.nav-bar ul {
-	float: right;
-}
-.nav-bar ul li {
-	float: left;
-}
-@media all and (min-width: 380px) and (max-width: 767px) {
-	.nav-bar ul li {
-		float: left;
-		width: 100%;
-		text-align: center;
-	}
-}
-@media all and (min-width: 0px) and (max-width: 379px) {
-	.nav-bar ul li {
-		float: left;
-		width: 100%;
-		text-align: center;
-	}
-}
-.nav-bar ul li a {
-	float: left;
-	width: 100%;
-	padding: 15px 15px 15px 15px;
-	font-weight: 600;
-	text-transform: uppercase;
-	color: black;
-}
-.nav-bar ul li a.active {
-	background-color: rgba(0, 157, 91, 1);
-	color: white;
-}
-.nav-bar ul li a.active:hover {
-	background-color: rgba(0, 157, 91, 1);
-	color: white;
-}
-.nav-bar ul li a:hover {
-	background-color: rgba(0, 127, 91, 1);
-	color: white;
-}
-#nav-bar p.tagline {
-	position: absolute;
-	top: 40px;
-	left: 20px;
-	margin-top: 10px;
-	font-style: italic;
-	font-weight: 500;
-}
+
 @media all and (min-width: 993px) and (max-width: 1200px) {
-	#nav-bar p.tagline {
-		display: none;
-	}
+
 }
 
 @media all and (min-width: 768px) and (max-width: 992px) {
-	#nav-bar p.tagline {
-		display: none;
-	}
+
 }
 
 @media all and (min-width: 380px) and (max-width: 767px) {
-	#nav-bar p.tagline {
-		display: none;
-	}
+
 }
 
 @media all and (min-width: 0px) and (max-width: 379px) {
-	#nav-bar p.tagline {
-		display: none;
-	}
-}
-
-#nav-bar-toggle {
-	position: relative;
-	float: right;
-	height: auto;
-	display: none;
-	margin: -37px 8px 0px 0px;
-	padding: 8px;
-	background-color: rgba(0, 127, 91, 1);
-	color: white;
-	z-index: 101;
-}
-#nav-bar-toggle-close {
-	position: relative;
-	float: right;
-	height: auto;
-	display: none;
-	margin: -37px 8px 0px 0px;
-	padding: 8px;
-	background-color: rgba(0, 127, 91, 1);
-	color: white;
-	z-index: 101;
-}
-@media all and (min-width: 380px) and (max-width: 767px) {
-	#nav-bar-toggle {
-		display: block;
-	}
-	#nav-bar-toggle.inactive {
-		display: none;
-	}
-	#nav-bar-toggle-close {
-		display: none;
-	}
-	#nav-bar-toggle-close.active {
-		display: block;
-		background-color: red;
-	}
-}
-@media all and (min-width: 0px) and (max-width: 379px) {
-	#nav-bar-toggle {
-		display: block;
-	}
-	#nav-bar-toggle.inactive {
-		display: none;
-		background-color: rgba(8, 61, 33, 1);
-	}
-	#nav-bar-toggle-close {
-		display: none;
-	}
-	#nav-bar-toggle-close.active {
-		display: block;
-		background-color: red;
-	}
-}
-
-.top-bar-spacer {
-	position: relative;
-	height: 40px;
-	background-color: black;
-	text-align: right;
-	z-index: 102;
-}
-@media all and (min-width: 380px) and (max-width: 767px) {
-	.top-bar-spacer {
-		text-align: center
-	}
-}
-
-@media all and (min-width: 0px) and (max-width: 379px) {
-	.top-bar-spacer {
-		text-align: center
-	}
-}
-.top-bar-spacer img {
-	float: left;
-	margin-top: -4px;
-	margin-left: 20px;
-	max-width: 400px;
-}
-@media all and (min-width: 380px) and (max-width: 767px) {
-	.top-bar-spacer img {
-		float: none;
-		margin-top: 0px;
-		margin-left: 10px;
-		max-width: 350px;
-	}
-}
-
-@media all and (min-width: 0px) and (max-width: 379px) {
-	.top-bar-spacer img {
-		float: none;
-		margin-top: 0px;
-		margin-left: 10px;
-		max-width: 300px;
-	}
-}
-.top-bar-spacer i {
-	color: white;
-}
-.top-bar-spacer li {
-	float: left;
-}
-
-.top-bar-spacer .button-container {
-	float: right;
-	height: 40px;
-	padding: 8px 0px 8px 0px;
-}
-@media all and (min-width: 380px) and (max-width: 767px) {
-	.top-bar-spacer .button-container {
-		float: left;
-		width: 100%;
-		background-color: rgba(0, 127, 91, 1);
-	}
-}
-@media all and (min-width: 0px) and (max-width: 379px) {
-	.top-bar-spacer .button-container {
-		float: left;
-		width: 100%;
-		background-color: rgba(0, 127, 91, 1);
-	}
-}
-
-.top-bar-spacer .button-container li{
-	height: 25px;
-	padding: 5px 15px 0px 15px;
-	border-left: 1px solid #555;
-}
-.top-bar-spacer .button-container li:first-child{
-	padding: 5px 0px 0px 0px;
-	border-left: 0px;
-}
-@media all and (min-width: 380px) and (max-width: 767px) {
-	.top-bar-spacer .button-container li:nth-child(2){
-		border-left: 0px;
-	}
-}
-@media all and (min-width: 0px) and (max-width: 379px) {
-	.top-bar-spacer .button-container li:nth-child(2){
-		border-left: 0px;
-	}
-}
-@media all and (min-width: 380px) and (max-width: 767px) {
-	.top-bar-spacer .button-container li:nth-child(2){
-		border-left: 0px;
-	}
-}
-@media all and (min-width: 0px) and (max-width: 379px) {
-	.top-bar-spacer .button-container li:nth-child(2){
-		border-left: 0px;
-	}
-}
-	.top-bar-spacer .button-container li a:hover i {
-		color: rgba(0, 127, 91, 1);
-	}
-
-.top-bar-title img {
-	max-width: 360px;
-	margin-left: 20px;
-}
-
-#responsive-menu {
 
 }
 
-#responsive-menu .top-bar-left {
 
-}
 
-#responsive-menu .top-bar-right {
 
-}
 
-#responsive-menu .top-bar-right .dropdown li a {
-	height: 40px;
-	font-size: 16px;
-	font-weight: 600;
-	color: rgba(110, 110, 76, 1);
-	text-transform: uppercase;
-}
 
-#responsive-menu .top-bar-right .dropdown li a:hover {
-	background-color: rgba(0, 127, 91, 1);
-	color: white;
-}
 
-/* ############### END NAVIGATION ############### */
+
