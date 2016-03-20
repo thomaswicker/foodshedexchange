@@ -34,6 +34,11 @@
 	padding: .5rem 0rem 0rem 0rem;
 	text-align: center;
 }
+@media all and (min-width: 768px) and (max-width: 992px) {
+	.callout-box .cob-left {
+		width: 100%;
+	}
+}
 @media all and (min-width: 380px) and (max-width: 767px) {
 	.callout-box .cob-left {
 		width: 100%;
@@ -55,6 +60,11 @@
 .callout-box .cob-right {
 	float: left;
 	width: calc(100% - 300px);
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+	.callout-box .cob-right {
+		width: 100%;
+	}
 }
 @media all and (min-width: 380px) and (max-width: 767px) {
 	.callout-box .cob-right {

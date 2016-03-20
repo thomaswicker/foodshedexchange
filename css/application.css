@@ -70,15 +70,6 @@ p {
 
 .margin-top-50 { float: left; width: 100%; margin-top: 50px; }
 
-.button-view {
-	background-color: rgba(0, 127, 91, 1);
-}
-.button-view:hover {
-	background-color: rgba(0, 107, 91, 1);
-}
-.button-view i {
-	margin-left: 6px;
-}
 /* ############### END HELPERS ############### */
 
 
@@ -499,24 +490,24 @@ input {
 }
 @media all and (min-width: 768px) and (max-width: 992px) {
 	.newsfeed-list-widget {
-		height: 220px;
+
 	}
 }
 @media all and (min-width: 380px) and (max-width: 767px) {
 	.newsfeed-list-widget {
-		height: 220px;
+
 	}
 }
 @media all and (min-width: 0px) and (max-width: 379px) {
 	.newsfeed-list-widget {
-		height: 220px;
+
 	}
 }
 
 .newsfeed-list-widget li {
 	float: left;
 	width: 33.3%;
-	padding: 20px;
+	padding: 1.1rem 1.1rem 1.1rem 1.1rem;
 	text-align: center;
 }
 
@@ -680,19 +671,19 @@ input {
 	}
 }
 
-.img-tile-with-label-small .button-view {
+.img-tile-with-label-small .btn-view {
 	position: absolute;
+	top: 0px;
 	right: 15px;
-	top: 15px;
 }
 @media all and (min-width: 380px) and (max-width: 767px) {
-	.img-tile-with-label-small .button-view {
-		top: 35px;
+	.img-tile-with-label-small .btn-view {
+		top: 15px;
 	}
 }
 @media all and (min-width: 0px) and (max-width: 379px) {
-	.img-tile-with-label-small .button-view {
-		top: 35px;
+	.img-tile-with-label-small .btn-view {
+		top: 15px;
 	}
 }
 
@@ -745,18 +736,18 @@ input {
 	}
 }
 
-.img-tile-with-label-large .button-view {
+.img-tile-with-label-large .btn-view {
 	position: absolute;
+	top: 0px;
 	right: 15px;
-	top: 70px;
 }
 @media all and (min-width: 380px) and (max-width: 767px) {
-	.img-tile-with-label-small .button-view {
+	.img-tile-with-label-small .btn-view {
 
 	}
 }
 @media all and (min-width: 0px) and (max-width: 379px) {
-	.img-tile-with-label-small .button-view {
+	.img-tile-with-label-small .btn-view {
 
 	}
 }

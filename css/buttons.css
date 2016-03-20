@@ -10,9 +10,13 @@
 .btn {
 	float: left;
 	padding: 12px 18px 12px 18px;
-	border: 2px solid red;
+	font-size: .8rem;
 	font-weight: 600;
+	color: white;
 	margin-top: 20px;
+}
+.btn:hover {
+	color: white;
 }
 
 .btn-green {
@@ -22,8 +26,18 @@
 }
 
 .btn-green:hover {
-	background-color: rgba(0, 127, 91, 1);
+	background-color: rgba(0, 147, 91, 1);
 	border: 2px solid rgba(0, 127, 91, 1);
 	cursor: pointer;
 	color: white;
+}
+
+.btn-view {
+	background-color: rgba(0, 127, 91, .75);
+}
+.btn-view:hover {
+	background-color: rgba(0, 147, 91, 1);
+}
+.btn-view i {
+	margin-left: 6px;
 }

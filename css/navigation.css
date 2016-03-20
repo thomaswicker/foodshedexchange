@@ -219,56 +219,56 @@
 	float: left;
 }
 
-.top-bar-spacer .button-container {
+.top-bar-spacer .btn-container {
 	float: right;
 	height: 40px;
 	padding: 8px 0px 8px 0px;
 }
 @media all and (min-width: 380px) and (max-width: 767px) {
-	.top-bar-spacer .button-container {
+	.top-bar-spacer .btn-container {
 		float: left;
 		width: 100%;
 		background-color: rgba(0, 127, 91, 1);
 	}
 }
 @media all and (min-width: 0px) and (max-width: 379px) {
-	.top-bar-spacer .button-container {
+	.top-bar-spacer .btn-container {
 		float: left;
 		width: 100%;
 		background-color: rgba(0, 127, 91, 1);
 	}
 }
 
-.top-bar-spacer .button-container li{
+.top-bar-spacer .btn-container li{
 	height: 25px;
 	padding: 5px 15px 0px 15px;
 	border-left: 1px solid #555;
 }
-.top-bar-spacer .button-container li:first-child{
+.top-bar-spacer .btn-container li:first-child{
 	padding: 5px 0px 0px 0px;
 	border-left: 0px;
 }
 @media all and (min-width: 380px) and (max-width: 767px) {
-	.top-bar-spacer .button-container li:nth-child(2){
+	.top-bar-spacer .btn-container li:nth-child(2){
 		border-left: 0px;
 	}
 }
 @media all and (min-width: 0px) and (max-width: 379px) {
-	.top-bar-spacer .button-container li:nth-child(2){
+	.top-bar-spacer .btn-container li:nth-child(2){
 		border-left: 0px;
 	}
 }
 @media all and (min-width: 380px) and (max-width: 767px) {
-	.top-bar-spacer .button-container li:nth-child(2){
+	.top-bar-spacer .btn-container li:nth-child(2){
 		border-left: 0px;
 	}
 }
 @media all and (min-width: 0px) and (max-width: 379px) {
-	.top-bar-spacer .button-container li:nth-child(2){
+	.top-bar-spacer .btn-container li:nth-child(2){
 		border-left: 0px;
 	}
 }
-	.top-bar-spacer .button-container li a:hover i {
+	.top-bar-spacer .btn-container li a:hover i {
 		color: rgba(0, 127, 91, 1);
 	}
 
