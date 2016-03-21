@@ -1,0 +1,77 @@
+/*
+  _____ ___   ___  ____    _    ____  _____ ____ ___    _
+ |  ___/ _ \ / _ \|  _ \  / \  |  _ \| ____|  _ \_ _|  / \
+ | |_ | | | | | | | | | |/ _ \ | |_) |  _| | | | | |  / _ \
+ |  _|| |_| | |_| | |_| / ___ \|  __/| |___| |_| | | / ___ \
+ |_|   \___/ \___/|____/_/   \_\_|   |_____|____/___/_/   \_\
+
+*/
+
+.foodapedia-detail-content {
+
+}
+@media all and (min-width: 380px) and (max-width: 767px) {
+	.foodapedia-detail-content {
+		padding-left: 1.3rem;
+		padding-right: 1.3rem;
+	}
+}
+
+@media all and (min-width: 0px) and (max-width: 379px) {
+	.foodapedia-detail-content {
+		padding-left: 1.3rem;
+		padding-right: 1.3rem;
+	}
+}
+
+.foodapedia-row {
+	float: left;
+	width: 100%;
+}
+.foodapedia-row h3 {
+	float: left;
+	width: 100%;
+	margin-top: 1.8rem;
+	padding-bottom: .6rem;
+	font-size: 1.7rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: rgba(179, 151, 110, 1);
+	border-bottom: 2px solid rgba(179, 151, 110, 1);
+}
+.foodapedia-row h4 {
+	float: left;
+	width: 100%;
+	margin-top: 1.3rem;
+	font-size: 1.3rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: black
+}
+.foodapedia-row p {
+	float: left;
+	width: 100%;
+	margin-top: .4rem;
+	font-size: 1.1rem;
+}
+.foodapedia-row table {
+	float: left;
+	width: 100%;
+	margin-top: .5rem;
+}
+.foodapedia-row table tbody {
+	border: 0px;
+}
+.foodapedia-row table tbody td {
+	padding: 1rem .4rem 1rem .4rem;
+	font-size: 1.2rem;
+	line-height: 140%;
+}
+.foodapedia-row table tbody tr td:first-child {
+	font-weight: 600;
+}
+
+.fr-table-left {
+	width: 200px;
+}
+

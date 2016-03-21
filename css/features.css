@@ -1,127 +1,135 @@
 /*
-  _   _ _______        ______
- | \ | | ____\ \      / / ___|
- |  \| |  _|  \ \ /\ / /\___ \
- | |\  | |___  \ V  V /  ___) |
- |_| \_|_____|  \_/\_/  |____/
+  _____ _____    _  _____ _   _ ____  _____ ____
+ |  ___| ____|  / \|_   _| | | |  _ \| ____/ ___|
+ | |_  |  _|   / _ \ | | | | | | |_) |  _| \___ \
+ |  _| | |___ / ___ \| | | |_| |  _ <| |___ ___) |
+ |_|   |_____/_/   \_\_|  \___/|_| \_\_____|____/
 
 */
 
-.news-detail-content-img {
+.email-callout {
+	float: left;
+	width: 100%;
+	margin-top: 2rem;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+.email-callout a {
 
 }
-
-.news-detail-content-img img {
-
-}
-
-.news-detail-content {
+.features-detail-content {
 	float: left;
 	width: 100%;
 	margin-bottom: 4rem;
 }
 @media all and (min-width: 1401px) and (max-width: 1920px) {
-	.news-detail-content {
-		padding: 0rem 2rem 0rem 2rem;
+	.features-detail-content {
+		padding: 0rem .5rem 0rem .5rem;
 	}
 }
 @media all and (min-width: 1201px) and (max-width: 1400px) {
-	.news-detail-content {
+	.features-detail-content {
 		padding: 0rem 2rem 0rem 2rem;
 	}
 }
 @media all and (min-width: 993px) and (max-width: 1200px) {
-	.news-detail-content {
+	.features-detail-content {
 		padding: 0rem 2rem 0rem 2rem;
 	}
 }
 @media all and (min-width: 768px) and (max-width: 992px) {
-	.news-detail-content {
+	.features-detail-content {
 		padding: 0rem 2rem 0rem 2rem;
 	}
 }
 @media all and (min-width: 380px) and (max-width: 767px) {
-	.news-detail-content {
+	.features-detail-content {
 		padding: 0rem 2rem 0rem 2rem;
 	}
 }
 @media all and (min-width: 0px) and (max-width: 379px) {
-	.news-detail-content {
+	.features-detail-content {
 		padding: 0rem 2rem 0rem 2rem;
 	}
 }
 
-.news-detail-content h2 {
+.features-detail-content h2 {
 	float: left;
 	width: 100%;
 	margin-top: .5rem;
-	font-size: 1.8rem;
-	line-height: 140%;
-	text-transform: uppercase;
+	margin-bottom: .5rem;
+	font-size: 2.7rem;
+	line-height: 130%;
 }
 @media all and (min-width: 1201px) and (max-width: 1400px) {
-	.news-detail-content h2 {
+	.features-detail-content h2 {
 		margin-top: 0rem;
 	}
 }
 @media all and (min-width: 993px) and (max-width: 1200px) {
-	.news-detail-content h2 {
+	.features-detail-content h2 {
 		margin-top: 0rem;
 	}
 }
 @media all and (min-width: 768px) and (max-width: 992px) {
-	.news-detail-content h2 {
+	.features-detail-content h2 {
 		margin-top: 1rem;
 	}
 }
 @media all and (min-width: 380px) and (max-width: 767px) {
-	.news-detail-content h2 {
+	.features-detail-content h2 {
 		margin-top: 2rem;
 	}
 }
 @media all and (min-width: 0px) and (max-width: 379px) {
-	.news-detail-content h2 {
+	.features-detail-content h2 {
 		margin-top: 2rem;
 	}
 }
 
-.news-detail-content h3 {
+.features-detail-content .subcontent {
 	float: left;
 	width: 100%;
+	margin-top: .4rem;
+	margin-bottom: 1rem;
 	font-size: 1.2rem;
 	line-height: 140%;
-	font-style: italic;
 	font-weight: 600;
-	color: rgba(0, 127, 91, 1);;
+	color: rgba(179, 151, 110, 1);
 }
 @media all and (min-width: 1201px) and (max-width: 1400px) {
-	.news-detail-content h2 {
+	.features-detail-content .subcontent {
 		margin-top: 0rem;
 	}
 }
 @media all and (min-width: 993px) and (max-width: 1200px) {
-	.news-detail-content h2 {
+	.features-detail-content .subcontent {
 		margin-top: 0rem;
 	}
 }
 @media all and (min-width: 768px) and (max-width: 992px) {
-	.news-detail-content h2 {
+	.features-detail-content .subcontent {
 		margin-top: 1rem;
 	}
 }
 @media all and (min-width: 380px) and (max-width: 767px) {
-	.news-detail-content h2 {
+	.features-detail-content .subcontent {
 		margin-top: 2rem;
 	}
 }
 @media all and (min-width: 0px) and (max-width: 379px) {
-	.news-detail-content h2 {
+	.features-detail-content .subcontent {
 		margin-top: 2rem;
 	}
 }
 
-.news-detail-content p {
+.features-detail-content p {
 	float: left;
 	width: 100%;
 	margin-top: 1.5rem;
+	font-size: 1.2rem;
+	line-height: 140%;
+}
+.features-detail-content p strong {
+	font-weight: 600;
 }

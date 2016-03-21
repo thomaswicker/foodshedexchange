@@ -1,0 +1,211 @@
+/*
+  ___ __  __    _    ____ _____   _____ ___ _     _____ ____
+ |_ _|  \/  |  / \  / ___| ____| |_   _|_ _| |   | ____/ ___|
+  | || |\/| | / _ \| |  _|  _|     | |  | || |   |  _| \___ \
+  | || |  | |/ ___ \ |_| | |___    | |  | || |___| |___ ___) |
+ |___|_|  |_/_/   \_\____|_____|   |_| |___|_____|_____|____/
+
+*/
+
+.img-tile-split {
+	float: left;
+	width: 50%;
+}
+.img-tile-split:first-child img {
+	border-right: 7px solid white;
+}
+.img-tile-split:last-child img {
+	border-left: 7px solid white;
+}
+.img-tile-split img {
+	float: left;
+	width: 100%;
+}
+
+.img-tile-grid {
+	position: relative;
+	z-index: 99;
+}
+.img-tile-grid a:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0, 0.5);
+	-moz-transition: background .3s linear;
+	-webkit-transition: background .3s linear;
+	-o-transition: background .3s linear;
+	transition: background .3s linear;
+}
+.img-tile-grid a:hover:before {
+	background: rgba(0,0,0, 0);
+}
+
+.img-tile-grid p {
+	position: absolute;
+	bottom: 30px;
+	left: 40px;
+	width: 80%;
+	font-size: 35px;
+	line-height: 130%;
+	color: white;
+	text-shadow: 2px 2px #000;
+	z-index: 100;
+}
+@media all and (min-width: 380px) and (max-width: 767px) {
+	.img-tile-grid p {
+		font-size: 45px;
+		line-height: 130%;
+		text-align: center;
+	}
+}
+
+@media all and (min-width: 0px) and (max-width: 379px) {
+	.img-tile-grid p {
+		font-size: 45px;
+		line-height: 130%;
+		text-align: center;
+	}
+}
+
+.img-tile-with-label-small {
+	position: relative;
+	z-index: 99;
+	float: left;
+	width: 33.3%;
+}
+@media all and (min-width: 380px) and (max-width: 767px) {
+	.img-tile-with-label-small {
+		width: 100%;
+	}
+}
+@media all and (min-width: 0px) and (max-width: 379px) {
+	.img-tile-with-label-small {
+		width: 100%;
+	}
+}
+
+.img-tile-with-label-small img {
+	width: 100%;
+	border: 5px solid white;
+}
+@media all and (min-width: 380px) and (max-width: 767px) {
+	.img-tile-with-label-small img {
+		margin-top: 20px;
+		border: 0px;
+	}
+}
+@media all and (min-width: 0px) and (max-width: 379px) {
+	.img-tile-with-label-small img {
+		margin-top: 20px;
+		border: 0px;
+	}
+}
+
+.img-tile-with-label-small p {
+	width: 100%;
+	padding-top: 10px;
+	font-size: 18px;
+	line-height: 130%;
+	color: black;
+}
+@media all and (min-width: 380px) and (max-width: 767px) {
+	.img-tile-with-label-small p {
+		padding: 10px 20px 10px 20px;
+		background-color: black;
+		color: white;
+	}
+}
+@media all and (min-width: 0px) and (max-width: 379px) {
+	.img-tile-with-label-small p {
+		padding: 10px 20px 10px 20px;
+		background-color: black;
+		color: white;
+	}
+}
+
+.img-tile-with-label-small .btn-view {
+	position: absolute;
+	top: -10px;
+	right: 15px;
+}
+@media all and (min-width: 380px) and (max-width: 767px) {
+	.img-tile-with-label-small .btn-view {
+		top: 10px;
+	}
+}
+@media all and (min-width: 0px) and (max-width: 379px) {
+	.img-tile-with-label-small .btn-view {
+		top: 10px;
+	}
+}
+
+.img-tile-with-label-large {
+	position: relative;
+	z-index: 99;
+}
+.img-tile-with-label-large img {
+	width: 100%;
+}
+.img-tile-with-label-large p {
+	position: absolute;
+	bottom: 50px;
+	left: 40px;
+	width: 65%;
+	font-size: 38px;
+	line-height: 130%;
+	color: white;
+	text-shadow: 2px 2px #000;
+	z-index: 100;
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+	.img-tile-with-label-large p {
+		bottom: 40px;
+		width: 85%;
+		max-height: 180px;
+		font-size: 30px;
+		overflow-y: hidden;
+	}
+}
+@media all and (min-width: 380px) and (max-width: 767px) {
+	.img-tile-with-label-large p {
+		bottom: 60px;
+		left: 40px;
+		max-height: 180px;
+		width: 85%;
+		font-size: 30px;
+		overflow-y: hidden;
+	}
+}
+@media all and (min-width: 0px) and (max-width: 379px) {
+	.img-tile-with-label-large p {
+		bottom: 50px;
+		left: 40px;
+		width: 65%;
+		max-height: 180px;
+		font-size: 18px;
+		line-height: 130%;
+		overflow-y: hidden;
+	}
+}
+
+.img-tile-with-label-large .btn-view {
+	position: absolute;
+	top: -10px;
+	right: 15px;
+}
+@media all and (min-width: 380px) and (max-width: 767px) {
+	.img-tile-with-label-small .btn-view {
+
+	}
+}
+@media all and (min-width: 0px) and (max-width: 379px) {
+	.img-tile-with-label-small .btn-view {
+
+	}
+}
+
+/* ############### END IMG TILE STYLES ############### */

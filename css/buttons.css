@@ -9,14 +9,35 @@
 
 .btn {
 	float: left;
+	margin-top: 1.7rem;
 	padding: 12px 18px 12px 18px;
-	font-size: .8rem;
+	font-size: 1rem;
 	font-weight: 600;
 	color: white;
-	margin-top: 20px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 .btn:hover {
 	color: white;
+	text-decoration: none;
+}
+@media all and (min-width: 380px) and (max-width: 767px) {
+	.btn {
+		width: 100%;
+	}
+	.btn:hover {
+		text-decoration: none;
+	}
+}
+
+@media all and (min-width: 0px) and (max-width: 379px) {
+	.btn {
+		width: 100%;
+	}
+	.btn:hover {
+		text-decoration: none;
+	}
 }
 
 .btn-green {
@@ -27,12 +48,13 @@
 
 .btn-green:hover {
 	background-color: rgba(0, 147, 91, 1);
-	border: 2px solid rgba(0, 127, 91, 1);
+	border: 2px solid rgba(0, 147, 91, 1);
 	cursor: pointer;
 	color: white;
 }
 
 .btn-view {
+	font-size: .8rem;
 	background-color: rgba(0, 127, 91, .75);
 }
 .btn-view:hover {
@@ -40,4 +62,15 @@
 }
 .btn-view i {
 	margin-left: 6px;
+}
+@media all and (min-width: 380px) and (max-width: 767px) {
+	.btn-view {
+		width: auto;
+	}
+}
+
+@media all and (min-width: 0px) and (max-width: 379px) {
+	.btn-view {
+		width: auto;
+	}
 }

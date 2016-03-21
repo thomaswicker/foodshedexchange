@@ -6,59 +6,6 @@
  /_/   \_\_|   |_|   |_____|___\____/_/   \_\_| |___\___/|_| \_|
 
 */
-/* ############### BEGIN CSS RESET ############### */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-p {
-	line-height: 140%;
-}
-
-/* ############### END CSS RESET ############### */
-
-
 
 /* ############### BEGIN HELPERS ############### */
 
@@ -116,8 +63,8 @@ html, body {
 .label-header {
 	float: left;
 	width: 100%;
-	margin: 0px 0px 10px 0px;
-	padding: 8px 0px 8px 0px;
+	margin: 0 0 .7rem 0;
+	padding: .5rem 0 .5rem 0;
 	font-size: 18px;
 	color: white;
 	text-align: center;
@@ -130,9 +77,41 @@ input {
 	float: left;
 	width: 90%;
 	height: 40px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: .8rem;
+	padding-right: .8rem;
 }
+
+a {
+	color: rgba(0, 127, 91, 1);
+	text-decoration: underline;
+}
+a:hover {
+	color: rgba(0, 147, 91, 1);
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+p {
+	font-size: 1.1rem;
+	line-height: 135%;
+}
+
+.subtitle {
+	float: left;
+	width: 100%;
+	margin: .8rem 0rem 1.5rem 0rem;
+	font-size: 2.8rem;
+	color: rgba(179, 151, 110, 1);
+	text-transform: uppercase;
+	text-align: center;
+}
+
+p span.paragraph-intro {
+	font-size: 1.4rem;
+	color: rgba(179, 151, 110, 1);
+	text-transform: uppercase;
+}
+
 
 /* ############### END GLOBAL STYLES ############### */
 
@@ -253,7 +232,7 @@ input {
 .fsx-row {
 	float: left;
 	width: 100%;
-	margin-top: 2rem;
+	margin-top: 1rem;
 }
 @media all and (min-width: 380px) and (max-width: 767px) {
 	.fsx-row {
@@ -316,19 +295,50 @@ input {
 	margin-left: auto;
 	margin-right: auto;
 }
+@media all and (min-width: 768px) and (max-width: 992px) {
+	.fsx-container {
+		padding-top: 4rem;
+	}
+}
+
+@media all and (min-width: 380px) and (max-width: 767px) {
+	.fsx-container {
+		padding-top: 4rem;
+	}
+}
+
+@media all and (min-width: 0px) and (max-width: 379px) {
+	.fsx-container {
+		padding-top: 4rem;
+	}
+}
 
 .fsx-container-left {
 	float: left;
 	width: calc(100% - 350px);
-	padding-right: 30px;
+	padding-right: 2.5rem;
 }
-
+@media all and (min-width: 1401px) and (max-width: 1920px) {
+	.fsx-container-left {
+		padding-left: 1.1rem;
+	}
+}
+@media all and (min-width: 1201px) and (max-width: 1400px) {
+	.fsx-container-left {
+		padding-left: 1.1rem;
+	}
+}
+@media all and (min-width: 993px) and (max-width: 1200px) {
+	.fsx-container-left {
+		padding-left: 1.1rem;
+	}
+}
 @media all and (min-width: 768px) and (max-width: 992px) {
 	.fsx-container-left {
 		float: left;
 		width: calc(100% - 350px);
-		margin-top: 20px;
-		padding-right: 30px;
+		margin-top: 1.1rem;
+		padding: 0 1.1rem 0 1.1rem;
 	}
 }
 @media all and (min-width: 380px) and (max-width: 767px) {
@@ -352,19 +362,34 @@ input {
 	width: 350px;
 	background-color: white;
 }
+@media all and (min-width: 1401px) and (max-width: 1920px) {
+	.fsx-container-right {
+		padding-right: 20px;
+	}
+}
+@media all and (min-width: 1201px) and (max-width: 1400px) {
+	.fsx-container-right {
+		padding-right: 20px;
+	}
+}
+@media all and (min-width: 993px) and (max-width: 1200px) {
+	.fsx-container-right {
+		padding-right: 20px;
+	}
+}
 @media all and (min-width: 768px) and (max-width: 992px) {
 	.fsx-container-right {
 		float: left;
 		width: 350px;
+		padding: 0 1.1rem 0 0;
 		background-color: white;
 	}
 }
-
 @media all and (min-width: 380px) and (max-width: 767px) {
 	.fsx-container-right {
 		float: left;
 		width: 100%;
-		padding: 0px 10px 0px 20px;
+		padding: 0 1.1rem 0 1.1rem;
 	}
 }
 
@@ -372,6 +397,7 @@ input {
 	.fsx-container-right {
 		float: left;
 		width: 100%;
+		padding: 0 1.1rem 0 1.1rem;
 		background-color: white;
 	}
 }
@@ -445,6 +471,7 @@ input {
 	width: 100%;
 	margin: 20px 0px 30px 0px;
 }
+
 
 /* ############### END SIDEBAR VIDEO STYLES ############### */
 
@@ -563,193 +590,20 @@ input {
 @media screen and (min-width: 1401px) and (max-width: 1920px) {
 
 }
+
 /* ############### END MASONRY CSS ############### */
 
 
-.img-tile-grid {
-	position: relative;
-	z-index: 99;
-}
-.img-tile-grid a:before {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: rgba(0,0,0, 0.5);
-	-moz-transition: background .3s linear;
-	-webkit-transition: background .3s linear;
-	-o-transition: background .3s linear;
-	transition: background .3s linear;
-}
-.img-tile-grid a:hover:before {
-	background: rgba(0,0,0, 0);
-}
 
-.img-tile-grid p {
-	position: absolute;
-	bottom: 30px;
-	left: 40px;
-	width: 80%;
-	font-size: 35px;
-	line-height: 130%;
-	color: white;
-	text-shadow: 2px 2px #000;
-	z-index: 100;
-}
-@media all and (min-width: 380px) and (max-width: 767px) {
-	.img-tile-grid p {
-		font-size: 45px;
-		line-height: 130%;
-		text-align: center;
-	}
-}
+.share-widget {
 
-@media all and (min-width: 0px) and (max-width: 379px) {
-	.img-tile-grid p {
-		font-size: 45px;
-		line-height: 130%;
-		text-align: center;
-	}
 }
-
-.img-tile-with-label-small {
-	position: relative;
-	z-index: 99;
+.share-widget img {
 	float: left;
-	width: 33.3%;
 }
-@media all and (min-width: 380px) and (max-width: 767px) {
-	.img-tile-with-label-small {
-		width: 100%;
-	}
+.share-widget span {
+	float: left;
+	padding: 1rem 0rem 0rem 1rem;
+	font-size: 1.3rem;
+	text-transform: uppercase;
 }
-@media all and (min-width: 0px) and (max-width: 379px) {
-	.img-tile-with-label-small {
-		width: 100%;
-	}
-}
-
-.img-tile-with-label-small img {
-	width: 100%;
-	border: 5px solid white;
-}
-@media all and (min-width: 380px) and (max-width: 767px) {
-	.img-tile-with-label-small img {
-		margin-top: 20px;
-		border: 0px;
-	}
-}
-@media all and (min-width: 0px) and (max-width: 379px) {
-	.img-tile-with-label-small img {
-		margin-top: 20px;
-		border: 0px;
-	}
-}
-
-.img-tile-with-label-small p {
-	width: 100%;
-	padding-top: 10px;
-	font-size: 18px;
-	line-height: 130%;
-	color: black;
-}
-@media all and (min-width: 380px) and (max-width: 767px) {
-	.img-tile-with-label-small p {
-		padding: 10px 20px 10px 20px;
-		background-color: black;
-		color: white;
-	}
-}
-@media all and (min-width: 0px) and (max-width: 379px) {
-	.img-tile-with-label-small p {
-		padding: 10px 20px 10px 20px;
-		background-color: black;
-		color: white;
-	}
-}
-
-.img-tile-with-label-small .btn-view {
-	position: absolute;
-	top: 0px;
-	right: 15px;
-}
-@media all and (min-width: 380px) and (max-width: 767px) {
-	.img-tile-with-label-small .btn-view {
-		top: 15px;
-	}
-}
-@media all and (min-width: 0px) and (max-width: 379px) {
-	.img-tile-with-label-small .btn-view {
-		top: 15px;
-	}
-}
-
-.img-tile-with-label-large {
-	position: relative;
-	z-index: 99;
-}
-.img-tile-with-label-large img {
-	width: 100%;
-}
-.img-tile-with-label-large p {
-	position: absolute;
-	bottom: 50px;
-	left: 40px;
-	width: 65%;
-	font-size: 38px;
-	line-height: 130%;
-	color: white;
-	text-shadow: 2px 2px #000;
-	z-index: 100;
-}
-@media all and (min-width: 768px) and (max-width: 992px) {
-	.img-tile-with-label-large p {
-		bottom: 40px;
-		width: 85%;
-		max-height: 180px;
-		font-size: 30px;
-		overflow-y: hidden;
-	}
-}
-@media all and (min-width: 380px) and (max-width: 767px) {
-	.img-tile-with-label-large p {
-		bottom: 60px;
-		left: 40px;
-		max-height: 180px;
-		width: 85%;
-		font-size: 30px;
-		overflow-y: hidden;
-	}
-}
-@media all and (min-width: 0px) and (max-width: 379px) {
-	.img-tile-with-label-large p {
-		bottom: 50px;
-		left: 40px;
-		width: 65%;
-		max-height: 180px;
-		font-size: 18px;
-		line-height: 130%;
-		overflow-y: hidden;
-	}
-}
-
-.img-tile-with-label-large .btn-view {
-	position: absolute;
-	top: 0px;
-	right: 15px;
-}
-@media all and (min-width: 380px) and (max-width: 767px) {
-	.img-tile-with-label-small .btn-view {
-
-	}
-}
-@media all and (min-width: 0px) and (max-width: 379px) {
-	.img-tile-with-label-small .btn-view {
-
-	}
-}
-/* ############### END IMG TILE STYLES ############### */
-

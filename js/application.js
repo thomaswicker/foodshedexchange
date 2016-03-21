@@ -5,6 +5,17 @@ $('.grid').masonry({
   itemSelector: '.grid-item'
 });
 
+$(document).ready(function () {
+	// Hiding menu on scroll
+	$(window).scroll(function() {
+		var scroll = $(window).scrollTop();
+
+		if (scroll >= 500) {
+			alert('test2');
+	   	$('#nav-bar').toggleClass('active');
+		}
+	});
+});
 
 var navBar            = $('#nav-bar'),
     navToggleClose    = $('#nav-bar-toggle-close'),
