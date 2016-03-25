@@ -58,6 +58,7 @@
 	width: 100%;
 	margin-top: .5rem;
 	margin-bottom: .5rem;
+	font-family: 'Suranna', serif;
 	font-size: 2.7rem;
 	line-height: 130%;
 }
@@ -95,7 +96,7 @@
 	font-size: 1.2rem;
 	line-height: 140%;
 	font-weight: 600;
-	color: rgba(179, 151, 110, 1);
+	color: rgba(166, 155, 163, 1);
 }
 @media all and (min-width: 1201px) and (max-width: 1400px) {
 	.features-detail-content .subcontent {

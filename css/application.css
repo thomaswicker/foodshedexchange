@@ -15,7 +15,10 @@
 .bg-purple { background-color: purple;}
 .bg-orange { background-color: orange;}
 
-.margin-top-50 { float: left; width: 100%; margin-top: 50px; }
+.margin-top-0 { float: left; width: 100%; margin-top: 0 !important; }
+.margin-top-5 { float: left; width: 100%; margin-top: 5px !important; }
+.margin-top-25 { float: left; width: 100%; margin-top: 25px !important; }
+.margin-top-50 { float: left; width: 100%; margin-top: 50px !important; }
 
 /* ############### END HELPERS ############### */
 
@@ -24,7 +27,7 @@
 /* ############### BEGIN GLOBAL STYLES ############### */
 
 html, body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Lato', sans-serif;
 	overflow-x: hidden;
 }
 
@@ -71,6 +74,18 @@ html, body {
 	text-transform: uppercase;
 	font-weight: 600;
 	background-color: #000;
+}
+
+.outlined-header {
+	float: left;
+	width: 100%;
+	padding-bottom: 1rem;
+	font-family: 'Suranna', serif;
+	font-size: 32px;
+	text-align: center;
+	border-bottom: 2px solid rgba(166, 155, 163, 1);
+	color: rgba(166, 155, 163, 1);
+	margin-top: 2rem;
 }
 
 input {
@@ -176,6 +191,7 @@ p span.paragraph-intro {
 	width: 100%;
 	background-color: black;
 	color: white;
+	margin-top: 3rem;
 }
 .fsx-footer-bottom-left {
 	float: left;
@@ -239,7 +255,6 @@ p span.paragraph-intro {
 		margin-top: 0rem;
 	}
 }
-
 @media all and (min-width: 0px) and (max-width: 379px) {
 	.fsx-row {
 		margin-top: 0rem;
@@ -250,66 +265,83 @@ p span.paragraph-intro {
 	margin-top: 0rem;
 }
 
-/* ############### END GRID STYLES ############### */
-
-
-
-/* ############### BEGIN ADS ############### */
-.ad {
-
-}
-@media all and (min-width: 0px) and (max-width: 379px) {
-	.ad {
-		display: none;
-	}
+.fsx-row-first {
+	margin-top: .3rem;
 }
 @media all and (min-width: 380px) and (max-width: 767px) {
-	.ad {
-		display: none;
+	.fsx-row-first {
+		margin-top: 3.2rem;
 	}
 }
 
-.banner-ad-top {
-	float: left;
-	width: 100%;
-	margin-top: 20px;
-	margin-bottom: 10px;
-	text-align: center;
+@media all and (min-width: 0px) and (max-width: 379px) {
+	.fsx-row-first {
+		margin-top: 3.2rem;
+	}
 }
-
-.sidebar-ad {
-	float: left;
-	width: 100%;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-/* ############### END ADS ############### */
+/* ############### END GRID STYLES ############### */
 
 
 
 /* ############### BEGIN HOME PAGE SPECIFIC STYLES ############### */
 
 .fsx-container {
-	max-width: 1500px;
-	margin-left: auto;
-	margin-right: auto;
+	position: relative;
+	z-index: 1;
+	top: -30px;
+	display: inline-block;
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	padding: 2rem 3rem 3rem 3rem;
+	box-shadow: 0px 0px 12px #444;
+}
+@media all and (min-width: 1401px) and (max-width: 1920px) {
+	.fsx-container {
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+		padding: 3rem 3rem 3rem 3rem;
+	}
+}
+@media all and (min-width: 1201px) and (max-width: 1400px) {
+	.fsx-container {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 3rem 3rem 0 3rem;
+	}
+}
+@media all and (min-width: 993px) and (max-width: 1200px) {
+	.fsx-container {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 3rem 3rem 3rem 3rem;
+	}
 }
 @media all and (min-width: 768px) and (max-width: 992px) {
 	.fsx-container {
-		padding-top: 4rem;
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 3rem .8rem 3rem .8rem;
 	}
 }
-
 @media all and (min-width: 380px) and (max-width: 767px) {
 	.fsx-container {
-		padding-top: 4rem;
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 3rem .8rem 3rem .8rem;
 	}
 }
-
 @media all and (min-width: 0px) and (max-width: 379px) {
 	.fsx-container {
-		padding-top: 4rem;
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 3rem .8rem 3rem .8rem;
 	}
 }
 
@@ -418,17 +450,11 @@ p span.paragraph-intro {
 .join-newsletter h3 {
 	font-size: 22px;
 	font-weight: 600;
-	margin-bottom: 15px;
+	margin-bottom: 1rem;
 	color: rgba(0, 127, 91, 1);
 }
-.join-newsletter label {
-	float: left;
-	width: 100%;
-	margin-top: 15px;
-	margin-bottom: 8px;
-	font-size: 15px;
-	font-weight: 600;
-	text-transform: uppercase;
+.join-newsletter .btn {
+	margin-top: .3rem;
 }
 
 /* ############### END 'JOIN NEWSLETTER' STYLES ############### */
@@ -440,26 +466,44 @@ p span.paragraph-intro {
 .food-exchange {
 	float: left;
 	width: 100%;
-	margin-top: 20px;
-	padding: 12px 0px 30px 0px;
-	border-top: 8px solid rgba(0, 127, 91, 1);
+	padding: 1.1rem .75rem 1.1rem 1.3rem;
+	margin-bottom: 1rem;
+	background-color: rgba(0, 127, 91, 1);
+	color: white;
+}
+.food-exchange:hover {
+	float: left;
+	width: 100%;
+	background-color: rgba(0, 147, 91, 1);
+	color: white;
+	cursor: pointer;
 }
 .food-exchange h3 {
 	font-size: 22px;
 	font-weight: 600;
-	margin-bottom: 15px;
-	color: rgba(0, 127, 91, 1);
+	margin-bottom: .5rem;
+	color: white;
 }
 .food-exchange p {
 	float: left;
 	width: 100%;
-	margin-top: 15px;
-	margin-bottom: 8px;
+	margin-top: .4rem;
+	margin-bottom: .5rem;
 	font-family: arial;
 	font-size: 17px;
 	font-weight: 300;
 }
-
+.food-exchange .join-here-link {
+	float: left;
+	width: 100%;
+	margin-top: .4rem;
+	margin-bottom: 8px;
+	font-family: arial;
+	font-size: 17px;
+	font-weight: 300;
+	text-decoration: none;
+	color: white;
+}
 /* ############### END 'FOOD EXCHANGE' STYLES ############### */
 
 
@@ -565,7 +609,12 @@ p span.paragraph-intro {
 	width: 100%;
 }
 
-.grid-item { width: 33.3%; border: 10px solid white;}
+.grid-item {
+	position: relative;
+	width: 33.3%;
+	border: 10px solid white;
+}
+
 .grid-item--width2 { width: 100%; }
 .grid-item img { width: 100%; }
 
@@ -590,6 +639,26 @@ p span.paragraph-intro {
 @media screen and (min-width: 1401px) and (max-width: 1920px) {
 
 }
+
+.tint {
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+.tint:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0, 0.45);
+  transition: all .3s linear;
+}
+
+.tint:hover:before { background: none; }
 
 /* ############### END MASONRY CSS ############### */
 

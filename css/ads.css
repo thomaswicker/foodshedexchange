@@ -1,0 +1,42 @@
+/*
+     _    ____  ____
+    / \  |  _ \/ ___|
+   / _ \ | | | \___ \
+  / ___ \| |_| |___) |
+ /_/   \_\____/|____/
+
+*/
+
+
+/* ############### BEGIN ADS ############### */
+.ad {
+
+}
+@media all and (min-width: 0px) and (max-width: 379px) {
+	.ad {
+		display: none;
+	}
+}
+@media all and (min-width: 380px) and (max-width: 767px) {
+	.ad {
+		display: none;
+	}
+}
+
+.banner-ad-top {
+	float: left;
+	width: 100%;
+	margin-top: 1rem;
+	margin-bottom: 1.2rem;
+	text-align: center;
+}
+
+.sidebar-ad {
+	float: left;
+	width: 100%;
+	margin-top: .5rem;
+	margin-bottom: 1.1rem;
+}
+
+/* ############### END ADS ############### */
+

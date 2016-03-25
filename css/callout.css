@@ -14,7 +14,6 @@
 	padding: 1.5rem 1rem 2rem 1rem;
 	border-top: 3px solid rgba(0, 127, 91, 1);
 	border-bottom: 3px solid rgba(0, 127, 91, 1);
-	background-color: rgba(0, 127, 91, .1);
 }
 @media all and (min-width: 380px) and (max-width: 767px) {
 	.callout-box {
@@ -52,9 +51,7 @@
 }
 
 .callout-box .cob-left img {
-	max-width: 200px;
-	border: 10px solid white;
-	box-shadow: 0px 0px 6px #000;
+	max-width: 240px;
 }
 
 .callout-box .cob-right {
@@ -82,10 +79,10 @@
 	float: left;
 	width: 100%;
 	margin-top: 1.3rem;
-	font-size: 1.5rem;
+	font-family: 'Suranna', serif;
+	font-size: 1.9rem;
 	font-weight: 600;
 	text-align: center;
-	text-transform: uppercase;
 	color: rgba(0, 127, 91, 1);
 }
 @media all and (min-width: 380px) and (max-width: 767px) {
@@ -120,13 +117,15 @@
 }
 
 .callout-box .cob-right .cob-content .more-link {
-	display: inline;
+	float: left;
 	font-size: .9rem;
 	font-weight: 600;
 	color: white;
 	background-color: rgba(0, 127, 91, 1);
+	margin-top: 1rem;
 	margin-left: .2rem;
 	padding: 0rem .5rem .2rem .5rem;
+	text-decoration: none;
 }
 @media all and (min-width: 380px) and (max-width: 767px) {
 	.callout-box .cob-right .cob-content .more-link {

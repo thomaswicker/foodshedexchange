@@ -1,11 +1,7 @@
 $(document).foundation();
 
-$('.grid').masonry({
-  // options
-  itemSelector: '.grid-item'
-});
-
 $(document).ready(function () {
+
 	// Hiding menu on scroll
 	$(window).scroll(function() {
 		var scroll = $(window).scrollTop();

@@ -27,13 +27,23 @@
 
 #search-container {
 	position: absolute;
-	top: 86px;
-	right: -750px;
+	top: 47px;
+	right: -800px;
 	width: 30%;
 	padding: .8rem 1rem 0rem .6rem;
 	background-color: black;
 	transition: all .25s ease;
 	min-width: 550px;
+}
+@media all and (min-width: 380px) and (max-width: 767px) {
+	#search-container {
+		top: 76px;
+	}
+}
+@media all and (min-width: 0px) and (max-width: 379px) {
+	#search-container {
+		top: 76px;
+	}
 }
 #search-container input {
 	float: left;
